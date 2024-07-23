@@ -20,7 +20,7 @@ public class LuckyNumberTest {
 
     @ParameterizedTest
     @MethodSource("getMatrix")
-    public void testIntersectionOfTwoArraysOk(int[][] matrix, int expected) {
+    public void testGetLuckyNumberOk(int[][] matrix, int expected) {
         List<Integer> actual = luckyNumber.luckyNumbers(matrix);
         Assertions.assertEquals(expected, actual.getFirst());
     }
